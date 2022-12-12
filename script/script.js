@@ -22,3 +22,27 @@ function scrollToSection(event) {
 menuLinks.forEach((link) => {
     link.addEventListener ("click", scrollToSection);
 })
+
+//aumentar--diminuir a letra//
+
+window.onload = function() {
+    let elementBody = document.querySelector('body');
+    let elementBtnIncreaseFont = document.getElementById('increase-font');
+    let elementBtnDecreaseFont = document.getElementById('decrease-font');
+    // Padrão de tamanho, equivale a 100% do valor definido no Body
+    let fontSize = 100;
+    
+    let increaseDecrease = 10;
+
+    // Evento de click para aumentar a fonte
+    elementBtnIncreaseFont.addEventListener('click', function(event) {
+        fontSize = fontSize + increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
+
+    // Evento de click para diminuir a fonte
+    elementBtnDecreaseFont.addEventListener('click', function(event) {
+        fontSize = fontSize - increaseDecrease;
+        elementBody.style.fontSize = fontSize + '%';
+    });
+}

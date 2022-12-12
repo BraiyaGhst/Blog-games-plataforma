@@ -14,7 +14,17 @@
    }
    body{
    background: rgb(249, 227, 254);
+   
    }
+   h1 { 
+    font-family: 'Turret Road', cursive;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-align: center;
+}
+
+
    .menu {
     z-index: 1000;
     background-position: center top;
@@ -27,7 +37,8 @@
     
   }
   .menu a{
-    padding: 20px;
+    font-size: 14px;
+    padding: 9px;
     color: #000;
   }
  
@@ -55,13 +66,18 @@
     cursor: pointer;
     transition: .3s;
 }
+#increase-font, #decrease-font{
+  padding: 25px;
+  width: 50px;
+  font-size: 14px;
 
+}
 button:hover{
   background-color: #E30BE3;
   transform: scaleY(1.2);
 }
 #back-to-top {
-  font-size: 15px;
+  font-size: 12px;
   position: fixed;
   bottom: 80px;
   right: 2px;
@@ -104,7 +120,7 @@ button:hover{
     padding: 20px;
   }
   #games h2 {
-    font-size: 30px;
+    
     text-align: center;
   }
  #games article {
@@ -158,6 +174,12 @@ button:hover{
    main{
     padding: 0;
    }
+   #increase-font, #decrease-font{
+    padding: 13px;
+    width: 25px;
+    font-size: 12px;
+  height: 2px;
+  }
     header{
       width: 120px;
       height: 50px;
@@ -167,7 +189,7 @@ button:hover{
       margin-top: 5px;
     }
     .menu a{
-      font-size: 12px;
+      font-size: 10px;
       
       justify-content: none;
     }
