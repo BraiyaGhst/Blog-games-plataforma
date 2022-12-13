@@ -24,6 +24,7 @@ menuLinks.forEach((link) => {
 })
 
 
+
 window.onload = function() {
     let elementBody = document.querySelector('body');
     let elementBtnIncreaseFont = document.getElementById('increase-font');

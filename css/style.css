@@ -12,6 +12,7 @@
     width: 95vw;
     padding: 20px;
    }
+
    body{
    background: rgb(249, 227, 254);
    
@@ -20,7 +21,6 @@
     font-family: 'Turret Road', cursive;
     justify-content: space-between;
     align-items: center;
-    
     text-align: center;
 }
 
@@ -30,18 +30,16 @@
     background-position: center top;
     width: 100%;
     position: fixed;  
-    transition: all .35s ease;
     background-color: #E30BE3;
     display: flex;
-    align-items: center;     
-    
   }
   .menu a{
     font-size: 14px;
     padding: 9px;
     color: #000;
+   
   }
- 
+
 
   header img {
     width: 30%;
@@ -108,12 +106,13 @@ button:hover{
      }
 
   #catalog{
+    
     display: grid;
-    grid-template-columns: auto 500px;
+    grid-template-columns: auto 0px;
     grid-template-rows: repeat(2, 170px);
-    margin-left: 350px;
+   justify-content: center;
     row-gap: 10px;
-    column-gap: 2px;
+    column-gap: 50px;
     padding: 20px;
   }
   #games {
@@ -131,8 +130,6 @@ button:hover{
   .cards {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
     
   }
   .cards img{
@@ -148,6 +145,7 @@ button:hover{
 }
     footer {
       width: 100%;
+      font-size: 12px;
       align-items: center;
       justify-content: space-between;
       display: flex;
@@ -164,12 +162,13 @@ button:hover{
   #rodape {
   transition: 0.35s ease;
     margin-top: 5px;
+    width: 17px;
 }
    #rodape:hover {
     transform: scale(0.9) translateY(-5px);
   cursor: pointer;
    }
-   
+  
    @media screen and (max-width: 768px) {
    main{
     padding: 0;
@@ -231,22 +230,10 @@ button:hover{
      
    }
   
-   #games article{
-    width: 30% ;
-   }
-   .cards{
-    margin-left: 20px;
-   }
    
-   footer{
-    width: 100%;
-    font-size: 12px;
-  justify-content: none;
-  padding: none;
-   }
-   #rodape{
-    width: 17px;
-   }
+  
+   
+   
    
 
    
