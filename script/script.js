@@ -23,7 +23,6 @@ menuLinks.forEach((link) => {
     link.addEventListener ("click", scrollToSection);
 })
 
-//aumentar--diminuir a letra//
 
 window.onload = function() {
     let elementBody = document.querySelector('body');
@@ -34,13 +33,13 @@ window.onload = function() {
     
     let increaseDecrease = 10;
 
-    // Evento de click para aumentar a fonte
+   
     elementBtnIncreaseFont.addEventListener('click', function(event) {
         fontSize = fontSize + increaseDecrease;
         elementBody.style.fontSize = fontSize + '%';
     });
 
-    // Evento de click para diminuir a fonte
+   
     elementBtnDecreaseFont.addEventListener('click', function(event) {
         fontSize = fontSize - increaseDecrease;
         elementBody.style.fontSize = fontSize + '%';
